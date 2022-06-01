@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="falukorvsburgare.css" />
+  </head>
+  <body>
+
+    <div class="app">
+      <div class="menu-toggle">
+        <div class="">
+          <span></span>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <h3>Bengts kokbok</h3>
+
+        <nav class="menu">
+          <a
+            href="http://127.0.0.1:5500/Slutprojekt/Recept.html"
+            class="menu-item"
+            >Hem</a
+          >
+          <a
+            href="http://127.0.0.1:5500/Slutprojekt/omoss.html"
+            class="menu-item"
+            >om oss</a
+          >
+          <a
+            href="http://127.0.0.1:5500/Slutprojekt/kontakt.html"
+            class="menu-item"
+            >Kontakt</a
+          >
+          <div class="dropdown">
+            <span>Recept</span>
+            <div class="dropdown-content">
+              <a href="falukorvsburgare.html" class="menu-item is-active"
+                >Falukorvsburgare</a
+              >
+              <a href="pastaalfredo.html">Pasta Alfredo</a>
+              <a href="Pastamedbasilikapesto.html">Pasta med basilikapesto</a>
+              <a href="pastacarbonara.html">Pasta carbonara</a>
+              <a href="marränger.html">Maränger </a>
+              <a href="kyckling.html">Kyckling med currysås och ris</a>
+              <a href="scones.html">Scones</a>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <h1>Bengts kokbok</h1>
+        <p>En kokbok för alla helt enkelt!</p>
+		<h2 class="hej">Falukorvsburgare</h2>
+    <img src="https://images.unsplash.com/photo-1607013401178-f9c15ab575bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""> <img
+
+      </main>
+  <div class="quotes">
+    <div class="kort">
+      <div class="box box1">
+        <p>300 g falukorv</p>
+		<p>4 ägg</p>
+		<p>Fyra hamburgerbröd</p>
+		<p>Ketchup</p>
+		<p>Senap</p>
+        <h2>Ingridienser</h2>
+      </div>
+      <div class="bg"></div>
+    </div>
+    <div class="kort">
+      <div class="box box2">
+        <p>1.Skiva upp falukorven.</p>
+		<p>2.Stek falukorven på medelhög värme tills den får fin färg.</p>
+		<p>3.Steg äggen.</p>
+		<p>4.Lägg 2 skivor falukorv i varje hamburgerbröd.</p>
+        <h2>Tillagning</h2>
+      </div>
+      <div class="bg"></div>
+    </div>
+    <div class="kort">
+      <div class="box box3">
+        <p>5.Klicka på lagom mycket ketchup och senap.</p>
+		<p>6.Lägg på ett ägg på varje hamburgare.</p>
+		<p>7.Servera!</p>
+        <h2>Tillagning del 2</h2>
+      </div>
+      <div class="bg"></div>
+    </div>
+  </div>
+
+    <script>
+      const menu_toggle = document.querySelector(".menu-toggle");
+      const sidebar = document.querySelector(".sidebar");
+
+      menu_toggle.addEventListener("click", () => {
+        menu_toggle.classList.toggle("is-active");
+        sidebar.classList.toggle("is-active");
+      });
+    </script>
+  </body>
+</html>
